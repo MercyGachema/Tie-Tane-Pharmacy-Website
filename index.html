@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- the page is displayed appropriately on different devices -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <!-- the web page should be rendered using the latest version of Internet Explorer available -->
+
+    <!--<link rel="shortcut icon" type="image/jpg" href="1.jpg" />-->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet" 
+    />
+    <!-- a link to a CSS file hosted on Google Fonts. This CSS file is used to import the "Poppins" font with 
+    different weights (300, 400, 500, 600) and specify how it should be displayed on a web page -->
+
+    <link rel="stylesheet" href="style.css" /> 
+
+    <title>Tie-Tane Healthcare Facility | Where excellence meets banking</title>
+
+  </head>
+
+  <body>
+
+    <header class="header">
+      <nav class="nav">
+
+        <img
+          src="img/pharm3.jpg"
+          alt="Pharmacy logo"
+          class="nav__logo"
+          id="logo"
+        />
+
+        <ul class="nav__links"> <!--  the list is used for navigation links in our web page -->
+          
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Services</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Products</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#section--4">Contact Us</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#section--5">About</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Refill</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header__title">
+
+        <h1>
+          The place where your health matters most
+          <!-- Green highlight effect 
+          <span class="highlight">your health</span>  
+          <br>
+          <span class="highlight">matters most</span>
+          -->
+        </h1>
+
+        <h4> Welcome to Tie-Tane Healthcare Facility , your trusted neighborhood pharmacy, 
+          dedicated to delivering exceptional healthcare services and personalized care.
+        </h4>
+
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+
+        <img
+          src="img/1.jpg"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+
+      <div class="section__title">
+
+        <h2 class="section__description">Features</h2>
+
+        <h3 class="section__header">
+          Bringing loving care to health care.
+        </h3>
+
+      </div>
+
+      <div class="features">
+
+        <img
+          src="img/pharm1.jpg"
+          data-src="img/pharm1.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+
+        <div class="features__feature">
+          <div class="features__icon">
+
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+
+          </div>
+
+          <h5 class="features__header">Mission and Values</h5>
+
+          <p>
+            At Tie-Tane Healthcare Facility, our mission is to provide accessible and comprehensive healthcare services to our community.
+            We are dedicated to delivering exceptional patient care, promoting wellness,
+            and fostering lasting relationships with our customers
+          </p>
+
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+
+          </div>
+
+          <h5 class="features__header">Customer Centric Approach</h5>
+
+          <p>
+            At Tie-Tane Healthcare Facility, we prioritize the well-being of our customers.
+            We take the time to understand your unique healthcare needs, answer your questions, and provide personalized care.
+            Your health and satisfaction are our top priorities, and we are 
+            here to support you on your path to wellness
+            
+          </p>
+
+        </div>
+
+        <img
+          src="img/2.jpg"
+          data-src="img/2.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/5.jpg"
+          data-src="img/5.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+
+        <div class="features__feature">
+          <div class="features__icon">
+
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+
+          </div>
+
+          <h5 class="features__header">Community Involvement</h5>
+          
+          <p>
+            We believe in giving back to the community that supports us. 
+            Through our partnerships with local healthcare organizations and active participation in community health events, 
+            we strive to make a positive impact on the well-being of our neighbors.
+          </p>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section" id="section--2">
+
+      <div class="section__title">
+
+        <h2 class="section__description">Our Services</h2>
+        <h3 class="section__header">
+          Some of the Servics offered here include.
+        </h3>
+
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Prescription Dispensing
+          </button>
+
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Medication Counseling
+          </button>
+
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Over The Counter
+          </button>
+
+          <button class="btn operations__tab operations__tab--4" data-tab="4">
+            <span>04</span>Immunizations and <br> Vaccinations
+          </button>
+
+          <button class="btn operations__tab operations__tab--5" data-tab="5">
+            <span>05</span>Health and Wellness Services
+          </button>
+
+          <!-- <button class="btn operations__tab operations__tab--6" data-tab="6">
+            <span>06</span>Health Screening and Testing
+          </button> -->
+
+          
+          
+
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+
+          </div>
+
+          <h5 class="operations__header">
+            The common Services are as follows:
+          </h5>
+
+          <p>
+            Filling prescriptions: Pharmacists dispense prescribed medications<br>
+            accurately and provide appropriate dosage instructions.<br>
+            Prescription transfers: Assisting patients in transferring their <br>
+            prescriptions from one pharmacy to another.
+          </p>
+
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+
+          </div>
+
+          <h5 class="operations__header">
+            Some of the Counseling services are as follows  :
+          </h5>
+
+          <p>
+            Medication information: Pharmacists offer comprehensive information <br>
+            about medications, including usage instructions, potential side effects, <br>
+            and interactions with other drugs.<br>
+            Adherence support: Helping patients understand the importance of medication <br>
+            adherence and providing strategies to maintain a consistent medication schedule.<br>
+            Specialized medication counseling: Tailored advice for specific conditions, such as<br>
+            diabetes management or anticoagulation therapy
+          </p>
+
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+
+          </div>
+
+          <h5 class="operations__header">
+            Over The Counter Recommendations include:
+          </h5>
+
+          <p>
+            Non-prescription advice: Pharmacists provide guidance on over-the-counter medications, <br>
+            including suitable options for common ailments and managing minor health concerns.<br>
+            Self-care recommendations: Suggesting self-care practices, lifestyle modifications, and <br>
+            non-pharmacological treatments for various health conditions
+          </p>
+
+        </div>
+
+        <div class="operations__content operations__content--4">
+          <div class="operations__icon operations__icon--4">
+
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+
+          </div>
+
+          <h5 class="operations__header">
+            Here's an overview of Immunizations and Vaccinations:
+          </h5>
+
+          <p>
+        
+              Vaccinations: Pharmacies may offer immunizations such as flu shots, tetanus <br>
+              vaccines, pneumonia vaccines, and other recommended vaccines.
+
+              Travel vaccinations: Providing immunizations and travel health advice for individuals <br>
+              planning international trips.
+          </p>
+
+        </div>
+        <div class="operations__content operations__content--5">
+          <div class="operations__icon operations__icon--5">
+
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+
+          </div>
+
+          <h5 class="operations__header">
+            Some of these include:
+          </h5>
+
+          <p>
+            Blood pressure monitoring: Offering blood pressure checks and providing guidance on <br>
+            maintaining healthy blood pressure levels.<br>
+            Cholesterol screening: Performing cholesterol tests and discussing ways to manage and<br>
+            improve cholesterol levels.<br>
+            Diabetes management: Providing support and education on blood glucose monitoring, <br>
+            insulin administration, and diabetes control
+          </p>
+
+        </div>
+
+
+
+      </div>
+
+      
+
+
+    </section>
+
+    <section class="section" id="section--3">
+
+      <div class="section__title section__title--testimonials">
+
+        <h2 class="section__description">Our Products</h2>
+        
+        <h5 class="section__header">
+          Here are some common types of products you can find in our Healthcare.
+        </h5>
+
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+
+            <h5 class="testimonial__header">Prescription Medications</h5>
+
+            <blockquote class="testimonial__text">
+              These medications are regulated and require a valid prescription from a licensed healthcare provider.
+            </blockquote>
+
+            <address class="testimonial__author">
+              <img src="img/Meds/prod5.jpg" alt="" class="testimonial__photo" />
+              <h5 class="testimonial__name">Ibuprofen</h5>
+            </address>
+            
+            <address class="testimonial__author">
+              <img src="img/Meds/prod5.jpg" alt="" class="testimonial__photo" />
+              <h5 class="testimonial__name">Ibuprofen</h5>
+            </address>
+
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+
+            <h5 class="testimonial__header">
+              Health Supplements
+            </h5>
+
+            <blockquote class="testimonial__text">
+              We often carry a selection of vitamins, minerals, and other dietary supplements. These products can support 
+              general health and wellness or target specific nutritional needs.
+            </blockquote>
+
+            <address class="testimonial__author">
+              <img src="img/Meds/prod1.jpg" alt="" class="testimonial__photo" />
+              <h5 class="testimonial__name">Dietary supplements</h5>
+            </address>
+
+            <address class="testimonial__author">
+              <img src="img/Meds/prod1.jpg" alt="" class="testimonial__photo" />
+              <h5 class="testimonial__name">Dietary supplements</h5>
+            </address>
+
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+
+            <h5 class="testimonial__header">
+              First Aid Supplies
+            </h5>
+
+            <blockquote class="testimonial__text">
+             We stock first aid supplies such as bandages, antiseptics, wound care products, and basic medical supplies 
+              to treat minor injuries and ailments.
+            </blockquote>
+
+            <address class="testimonial__author">
+              <img src="img/Meds/prod2.jpg" alt="" class="testimonial__photo" />
+              <h5 class="testimonial__name">First Aid Kit</h5>
+            </address>
+
+          </div>
+        </div>
+
+        <div class="slide slide--4">
+          <div class="testimonial">
+
+            <h5 class="testimonial__header">
+              Health Monitoring Devices
+            </h5>
+
+            <blockquote class="testimonial__text">
+              We sell health monitoring devices such as blood pressure monitors, glucose meters, thermometers, and other medical 
+              devices to help individuals monitor their health conditions at home.
+            </blockquote>
+
+            <address class="testimonial__author">
+              <img src="img/Meds/prod3.jpg" alt="" class="testimonial__photo" />
+              <h5 class="testimonial__name">Blood Pressure Kit</h5>
+            </address>
+
+          </div>
+        </div>
+
+        <div class="slide slide--5">
+          <div class="testimonial">
+
+            <h5 class="testimonial__header">
+              Over-the-Counter Tests
+            </h5>
+
+            <blockquote class="testimonial__text">
+              We offer over-the-counter diagnostic tests, such as pregnancy tests, ovulation tests, and HIV tests, 
+              which can be purchased and used at home.
+            </blockquote>
+
+            <address class="testimonial__author">
+              <img src="img/Meds/prod4.JPG" alt="" class="testimonial__photo" />
+              <h5 class="testimonial__name">Pregnancy Kit</h5>
+            </address>
+
+          </div>
+        </div>
+
+        <div class="slide slide--6">
+          <div class="testimonial">
+
+            <h5 class="testimonial__header">
+              Baby Care Products
+            </h5>
+
+            <blockquote class="testimonial__text">
+              We offer baby care items like diapers, baby formula, baby food, baby wipes, and other 
+              essentials for infants and young children.
+            </blockquote>
+
+            <address class="testimonial__author">
+              <img src="img/Meds/prod6.jpg" alt="" class="testimonial__photo" />
+              <h5 class="testimonial__name">Nun Milk</h5>
+            </address>
+
+          </div>
+        </div>
+
+        
+
+        <!-- <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
+        <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
+        <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> -->
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>  
+      </div>
+
+    </section>
+
+
+
+
+    <section class="section" id="section--4">
+
+      <div class="section__title section__title--testimonials">
+
+        <h2 class="section__description">Contact Us</h2>
+        
+        <h5 class="section__header">
+          Here are some common types of products you can find in our Healthcare.
+        </h5>
+
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+
+            <h5 class="testimonial__header">Best Services ever!</h5>
+            <blockquote class="testimonial__text">
+
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium quas quisquam non? Quas voluptate nulla minima
+              deleniti optio ullam nesciunt, numquam corporis et asperiores
+              laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+              id alias reiciendis, perferendis facere pariatur dolore veniam
+              autem esse non voluptatem saepe provident nihil molestiae.
+
+            </blockquote>
+
+          </div>
+        </div>
+
+    </section>
+
+
+
+  <section class="section" id="section--5">
+
+      <div class="section__title section__title--testimonials">
+
+        <h2 class="section__description">About</h2>
+      
+
+      <div class="features">
+
+        <img
+          src="img/pharm1.jpg"
+          data-src="img/pharm1.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+
+        <div class="features__feature">
+          <div class="features__icon">
+
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+
+          </div>
+
+          <h5 class="features__header">About Us</h5>
+
+          <p>
+            We located in Wataalam along Kiambu Ruiru Highway <br>
+            We are your number one Pharmacy in the sorroudings
+          </p>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+
+        <h3 class="section__header">
+          Incase you want to contact us:
+        </h3>
+
+      </div>
+      <button class="btn btn--show-modal">Email us !</button>
+    </section>
+
+    
+    <footer class="footer">
+
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">Working Hours</a>
+          <p> Monday To Saturday
+            <br>
+            8AM - 9PM
+            <br>
+            Wataalam
+            <br>
+            Ruiru
+          </p>
+        </li>
+
+        <li class="footer__item">
+          <a class="footer__link" href="#">Services</a>
+          <p> Pharmacy Helpline
+            <br>
+            Prescriptions
+            <br>
+            Speciality Medicine
+            <br>
+            Pharmacy Claims
+          </p>
+        </li>
+
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact </a>
+          <p> 0726401291
+            <br>
+            0796526870
+            <br>
+            0716455282
+            <br>
+            0717538388
+          </p>
+        </li>
+
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+          <p>
+            We do not sell your personal <br>
+            information to third parties <br>
+            in exchange for monetary <br>
+            consideration
+          </p>
+        </li>
+
+
+      </ul>
+
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+
+      <p class="footer__copyright">
+        &copy; Design Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/jonasschmedtman"
+          >Miss Sunflower</a
+        >. All rights reserved.
+      </p>
+
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+
+      <h2 class="modal__header">
+        Open your bank account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
