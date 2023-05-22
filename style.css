@@ -102,6 +102,7 @@ body {
 
 p {
   color: #666;
+  font-size: small;
 }
 
 button:focus {
@@ -792,4 +793,67 @@ first row of the grid and extend vertically to span two rows.  */
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+
+/* custom styling for the Contact Us page*/
+
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: small;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info,
+.contact-form {
+  flex-basis: 45%;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: small;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form button {
+  background-color: #0cc8f7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-image: linear-gradient( /* color of the send message button */
+      to right,
+      #e1255d,
+      #4481eb,
+      #024055,
+      #3f86ed
+    );
 }

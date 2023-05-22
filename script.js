@@ -1,4 +1,4 @@
-'use strict';
+'use strict'; // This mode enforces stricter rules for variable declarations and other JavaScript behaviors.
 
 // #Region Constants
 const modal = document.querySelector('.modal');
