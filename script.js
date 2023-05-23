@@ -242,3 +242,4 @@ function prevSlide() {
   goToSlide(currentSlide);
   activateDot(currentSlide);
 }
+

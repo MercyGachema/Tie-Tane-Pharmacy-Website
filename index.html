@@ -56,8 +56,7 @@
           </li>
 
           <li class="nav__item">
-            <a class="nav__link nav__link--btn btn--show-modal" href="#"
-              >Refill</a>
+            <a class="nav__link nav__link--btn btn--show-modal" href="#">Refill</a>
           </li>
 
         </ul>
@@ -93,7 +92,7 @@
 
       <div class="section__title">
 
-        <h2 class="section__description">Features</h2>
+        <h2 class="section__description">HOME</h2>
 
         <h3 class="section__header">
           Bringing loving care to health care.
@@ -132,9 +131,13 @@
         <div class="features__feature">
           <div class="features__icon">
 
-            <svg>
-              <use xlink:href="img/icons.svg#icon-trending-up"></use>
-            </svg>
+
+             <!-- contains multiple SVG icons or elements, and the #icon-trending-up refers to a specific icon within that SVG file. When the SVG is rendered, 
+             the referenced icon will be displayed at the location of the <use> element -->
+
+             <svg>
+               <use xlink:href="img/icons.svg#icon-trending-up"></use>
+             </svg>
 
           </div>
 
@@ -216,11 +219,11 @@
           </button>
 
           <button class="btn operations__tab operations__tab--4" data-tab="4">
-            <span>04</span>Immunizations and <br> Vaccinations
+            <span>04</span>Immunizations & <br> Vaccinations
           </button>
 
           <button class="btn operations__tab operations__tab--5" data-tab="5">
-            <span>05</span>Health and Wellness Services
+            <span>05</span>Health & Wellness Services
           </button>
 
           <!-- <button class="btn operations__tab operations__tab--6" data-tab="6">
@@ -348,11 +351,7 @@
 
         </div>
 
-
-
       </div>
-
-      
 
 
     </section>
@@ -385,8 +384,8 @@
             </address>
             
             <address class="testimonial__author">
-              <img src="img/Meds/prod5.jpg" alt="" class="testimonial__photo" />
-              <h5 class="testimonial__name">Ibuprofen</h5>
+              <img src="img/Meds/prod12.jpg" alt="" class="testimonial__photo" />
+              <h5 class="testimonial__name">Excedrin</h5>
             </address>
 
           </div>
@@ -615,9 +614,6 @@
         
     </section>
 
-
-
-
     <!--  <section class="section section--sign-up">
       <div class="section__title">
 
@@ -698,11 +694,11 @@
     <div class="modal hidden">
       <button class="btn--close-modal">&times;</button>
 
-      <h2 class="modal__header">
+      <h3 class="modal__header">
         Contact us for your<br>
         meds Refill 
         in just <span class="highlight">5 minutes</span>
-      </h2>
+      </h3>
 
       <form class="modal__form">
         <label>First Name</label>
@@ -711,7 +707,13 @@
         <input type="text" />
         <label>Email Address</label>
         <input type="email" />
-        <button class="btn">Next step &rarr;</button>
+        <label>Drug Name</label>
+        <input type="text" />
+        <label>Dosage</label>
+        <input type="text" />
+
+        <button class="btn">Submit &rarr;</button><!-- The &rarr; symbol is used to display a right arrow character -->
+    
       </form>
 
     </div>

@@ -1,5 +1,6 @@
 :root {
   --color-primary: #5ec576;
+  --color-primary-primary: #f507a6;
   --color-secondary: #ffcb03;
   --color-tertiary: #ff585f;
   --color-primary-darker: #4bbb7d;
@@ -10,6 +11,13 @@
   --color-tertiary-opacity: #ff58602d;
   --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+  --gradient-primary-primary: linear-gradient( /* color of the send message button */
+      to right,
+      #e1255d,
+      #4481eb,
+      #024055,
+      #3f86ed
+    );
 }
 
 
@@ -56,10 +64,10 @@ body {
 }
 
 .section__description {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 900;
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: var(--color-primary-darker);
   margin-bottom: 1rem;
 }
 
@@ -83,7 +91,14 @@ body {
 }
 
 .btn:hover {
-  background-color: var(--color-primary-darker);
+  background: var(--gradient-primary-primary, linear-gradient
+     (
+          to right
+         #e1255d,
+         #4481eb,
+         #024055,
+         #3f86ed
+     ));
 }
 
 .btn--text {
@@ -101,8 +116,9 @@ body {
 }
 
 p {
-  color: #666;
+  color: #070707;
   font-size: small;
+  font-weight: bold;
 }
 
 button:focus {
@@ -270,7 +286,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-primary-opacity);
+  background-color: var(--color-secondary-darker);
   height: 5.5rem;
   width: 5.5rem;
   border-radius: 50%;
@@ -292,7 +308,8 @@ h4 {
 .operations {
   max-width: 100rem;
   margin: 12rem auto 0 auto;
-  background-color:  rgba(8, 234, 250, 0.95);;
+ /*  background-color:  rgba(8, 234, 250, 0.95); */
+  
 }
 
 .operations__tab-container {
@@ -352,18 +369,6 @@ h4 {
   background-color: var(--color-tertiary-opacity);
 }
 
-.operations__tab--6 {
-  background-color: var(--color-tertiary --color-primary-opacity);
-  margin: 0;
-}
-
-.operations__tab--6:hover {
-  background-color: var(--color-tertiary-opacity);
-}
-
-.operations__tab--3:hover {
-  background-color: var(--color-tertiary-darker);
-}
 
 
 /*.operations__tab--3:hover{
@@ -381,6 +386,7 @@ h4 {
 
 
 /*  the active tab or element appears slightly elevated or shifted upward.*/
+
 .operations__tab--active {
   transform: translateY(-66%);
 }
@@ -428,13 +434,13 @@ h4 {
 }
 
 .operations__icon--1 {
-  background-color: var(--color-secondary-opacity);
+  background-color: var(--color-secondary-darker);
 }
 .operations__icon--2 {
-  background-color: var(--color-primary-opacity);
+  background-color: var(--color-tertiary);
 }
 .operations__icon--3 {
-  background-color: var(--color-tertiary-opacity);
+  background-color: var(--color-secondary-darker);
 }
 
 .operations__icon--4 {
@@ -442,11 +448,7 @@ h4 {
 }
 
 .operations__icon--5 {
-  background-color: var(--color-tertiary);
-}
-
-.operations__icon--6 {
-  background-color: var(--color-tertiary);
+  background-color: var(--color-secondary);
 }
 
 
@@ -671,7 +673,7 @@ first row of the grid and extend vertically to span two rows.  */
 /* FOOTER */
 .footer {
   padding: 10rem 3rem;
-  background-color: #37383d;
+  background-color: #434444;
 }
 
 .footer__nav {
@@ -857,3 +859,12 @@ first row of the grid and extend vertically to span two rows.  */
       #3f86ed
     );
 }
+
+/*.nextBtn {
+  background-color: #0cc8f7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
